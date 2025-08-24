@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^6.4.5",
+    "antd": "^5.24.1",
+    "create-react-app": "^5.1.0",
+    "react-router-dom": "^7.2.0",
+    "second": "^1.7.0"
+  }
+}

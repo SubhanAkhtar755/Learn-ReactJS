@@ -1,0 +1,298 @@
+$light-color: #4a4a4a;
+$white:#fff;
+$body:#f4f4f4;
+$primary:#638eff;
+$primary-Dark:#745dff;
+
+body{
+    background-color: #c4e5a7 !important;
+    font-family:' Open Sans , sans-serif ';
+}
+.container{
+    width:75%;
+    margin: 0 auto;
+    margin-top: 50px;
+    animation: width 1s ease-in-out ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+.header-bar{
+
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    animation: OverallOpacity 1s ease-in-out ;
+}
+.logo{
+ 
+    img{
+        width: 100px;
+        cursor: pointer;
+    }
+}
+.menu-bar{
+  ul{
+    display: flex;
+    gap: 40px;
+    padding: 10px;
+    cursor: pointer;
+    li{
+        list-style: none;
+       font-size: 18px;
+    color: $light-color;
+ 
+    }
+    .menu-btn{
+      font-weight: 700;
+        color: $primary;
+    }
+  }
+  
+}
+.main-card{
+    background-color: $white;
+    border-radius: 8px;
+   display: flex;
+    margin-top: 30px;
+    width: 100%;
+    min-height: 350px;
+    box-shadow: 0 0 10px #745dff;
+    animation: card  1s ease-in-out , height 2s ease-out ;
+   .card-sidebar{
+     background-color: #08f37270;
+     color: $white;
+     border-radius: 8px 8px 8px 8px;
+     flex: 0 0 20px;
+     animation: card 1s ease-in-out;
+     div{
+        img{
+            padding: 0 20px;
+            margin: 20px 0;
+            animation: img 1s ease-in-out;
+            cursor: pointer;
+            animation: side 1s ease-in-out;
+        }
+     }
+   }
+   .card-container{
+    padding: 0 30px;
+   color: #745dff;
+   animation: img 1s ease-in-out;
+   width: 100%;
+   animation: OverallOpacity 1s ease-in-out ;
+   div{
+    h1{
+        font-size: 48px;
+       font-weight: 700;
+       line-height: .85;
+       letter-spacing: .6px;
+       color: #000;
+       margin-bottom: 28px;
+       animation: text 1s ease-in-out ;
+    }
+   }
+   .text-section{
+    height: 100%;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       .resize-section{
+        flex: 1;
+       }
+       .save-btn{
+        color: $white;
+        border-radius: 8px;
+        padding: 10px 20px;
+        cursor: pointer;
+        text-align: right;
+        span{
+            font-size: 16px;
+            font-weight: 700;
+            margin-right:50px;
+        color: #000;
+           cursor: pointer;
+            animation: OverallOpacity 2s ease-in-out;
+        }
+        }
+    }
+   }
+}
+
+@keyframes text {
+    0% {
+    font-size: 0px;
+    }
+    100% {
+     font-size: 48px;
+    }
+}
+   
+@keyframes card {
+    0% {
+       width: 0%;
+      
+    }
+    100% {
+        width: 100%;
+       
+    }
+}
+@keyframes height {
+    0% {
+        min-height: 0px;
+        transform: scale(0.5);
+    }
+
+    100% {
+      
+        min-height: 350px;
+        transform: scale(1);
+        
+    }
+}
+
+@keyframes OverallOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+       opacity: 1;
+    }
+}
+@keyframes Container {
+    0% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: 50px;
+    }
+}
+@keyframes side {
+    0% {
+        padding: 0 0px;
+        margin: 0px 0;
+    }
+    100% {
+        padding: 0 20px;
+            margin: 20px 0;
+    }
+}
+@keyframes width {
+    0% {
+        transform:translateX(-210px);
+    }
+    100% {
+  transform:translateX(0px);
+    }
+}
+.file-section{
+    .files-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+       
+       .files-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        flex-direction: row;
+        div{
+            cursor: pointer;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg{
+             
+                width: 24px;
+                height: 24px;
+                margin-right: 5px;
+            }
+            &:hover{
+                text-decoration: underline;
+            }
+            &:active{
+                opacity: 0.5;
+            }
+        }
+       }
+     
+    }
+}
+.Download{
+    color: $primary;
+    font-weight: 700;
+    cursor: pointer;
+    animation: OverallOpacity 2s ease-in-out;
+   
+    svg{
+        height: 20px !important;
+        margin-bottom: 5px;
+    }
+}
+.Delete{
+    color: #963a45 !important;
+    font-weight: 700;
+    cursor: pointer;
+    animation: OverallOpacity 2s ease-in-out;
+    svg{
+        height: 20px !important;
+        margin-bottom: 5px;
+     color: #963a45 !important;
+    }
+}
+.footer{
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    animation: OverallOpacity 2s ease-in-out;
+    p{
+        color: $primary;
+        margin-right: 20px;
+        font-weight: 700;
+        width: 50%;
+        text-align: center;
+    }
+    .social-media{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        svg{
+            width: 70px;
+            height: 30px;
+          
+            &:hover{
+                color: $primary;
+                animation: svg 0.2s ease-in-out ;
+                transform: scale(2);
+            }
+            font-weight: 900;
+        }
+    }
+}
+
+@keyframes svg {
+    0% {
+        font-weight:0;
+        transform: scale(1);
+    }
+    100% {
+        font-weight: 900;
+        transform: scale(2);
+    }
+}
